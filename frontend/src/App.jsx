@@ -25,7 +25,7 @@ function App() {
     formData.append('file', selectedFile)
 
     try {
-      const response = await fetch('https://leggings-dedicator-ergonomic.ngrok-free.dev', {
+      const response = await fetch('https://deteksi-pohon-cv.vercel.app/', {
         method: 'POST',
         body: formData,
       })
