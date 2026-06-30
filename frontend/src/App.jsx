@@ -25,7 +25,7 @@ function App() {
     formData.append('file', selectedFile)
 
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://leggings-dedicator-ergonomic.ngrok-free.dev', {
         method: 'POST',
         body: formData,
       })
