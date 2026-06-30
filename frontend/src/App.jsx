@@ -17,7 +17,6 @@ function App() {
   }
 
   // Fungsi untuk mengirim gambar ke Backend Python
-  // Fungsi untuk mengirim gambar ke Backend Python
   const handleUpload = async () => {
     if (!selectedFile) return
 
@@ -26,11 +25,10 @@ function App() {
     formData.append('file', selectedFile)
 
     try {
-      // GANTI URL DI BAWAH DENGAN URL NGROK KAMU YANG SEDANG AKTIF SAAT INI
-      const response = await fetch('https://deteksi-pohon-cv.vercel.app/', {
+      const response = await fetch('https://leggings-dedicator-ergonomic.ngrok-free.dev/predict', {
         method: 'POST',
         headers: {
-          'ngrok-skip-browser-warning': 'true' // <-- Tambahkan baris ini untuk bypass blokir Ngrok
+          'ngrok-skip-browser-warning': 'true'
         },
         body: formData,
       })
