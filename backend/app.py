@@ -11,7 +11,7 @@ CORS(app)
 
 # Load model yang sudah di-training
 # Pastikan nama file sesuai dengan yang kamu unduh
-model = tf.keras.models.load_model('model_deteksi_pohon.keras')
+model = tf.keras.models.load_model('model_pohon_canggih.keras')
 
 # Daftar kelas. PENTING: Urutannya harus sama dengan output class_names di Colab!
 # Biasanya diurutkan sesuai abjad oleh fungsi image_dataset_from_directory
